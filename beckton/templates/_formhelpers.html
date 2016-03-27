@@ -1,0 +1,29 @@
+{% macro render_field(field) %}
+  {% if field.errors %}
+    {{ field.label(class_="error") }}
+    {{ field(class_="error", **kwargs) }}
+    <small class="error">
+      {% for error in field.errors %}
+        {{error}}
+      {% endfor %}
+    </small>
+  {% else %}
+    {{ field.label() }}
+    {{ field() }}
+  {% endif %}
+{% endmacro %}
+
+{% macro render_checkbox(field) %}
+  {% if field.errors %}
+    {{ field(class_="error is-visible", **kwargs) }}
+    {{ field.label(class_="error", **kwargs) }}
+    <small class="error">
+      {% for error in field.errors %}
+        {{error}}
+      {% endfor %}
+    </small>
+  {% else %}
+    {{ field() }}
+    {{ field.label() }}
+  {% endif %}
+{% endmacro %}
