@@ -3,6 +3,8 @@ import os
 class Config(object):
     DEBUG = False
     CELERY_ACCEPT_CONTENT = ['json']
+    CELERY_TASK_SERIALIZER = 'json'
+    CELERY_RESULT_SERIALIZER = 'json'
     MONGODB_DB = os.environ.get('MONGODB_DB', None)
     MONGODB_HOST = os.environ.get('MONGODB_HOST', None)
     MONGODB_PORT = int(os.environ.get('MONGODB_PORT', 0))
