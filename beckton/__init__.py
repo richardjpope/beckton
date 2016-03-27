@@ -6,7 +6,7 @@ import jinja2
 import os
 
 app = Flask(__name__)
-app.config.from_object(os.environ.get('SETTINGS', None))
+app.config.from_object(os.environ['SETTINGS', None])
 
 #Database
 db = MongoEngine(app)
