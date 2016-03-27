@@ -12,9 +12,10 @@ def reset():
     if prompt_bool("Are you absolutely certain you want to delete all this things?"):
 
       #reset mongo
-      mongo_settings =  app.config['MONGODB_SETTINGS']
-      db = connect(mongo_settings['DB'])
-      db.drop_database(mongo_settings['DB'])
+      # mongo_settings =  app.config['MONGODB_SETTINGS']
+      # db = connect(mongo_settings['DB'])
+      db = connect(app.config['MONGODB_DB'], host=app.config['MONGODB_HOST'],  port=app.config['MONGODB_PORT'])
+      db.drop_database(app.config['MONGODB_DB'])
       print("Deleted all collections from database ...")
 
       #reset celery
