@@ -1,13 +1,13 @@
 import os
 
 class Config(object):
-    DEBUG = True
+    DEBUG = False
     CELERY_ACCEPT_CONTENT = ['json']
     MONGODB_DB = os.environ.get('MONGODB_DB', None)
     MONGODB_HOST = os.environ.get('MONGODB_HOST', None)
     MONGODB_PORT = int(os.environ.get('MONGODB_PORT', None))
     SECRET_KEY = os.environ.get('SECRET_KEY', None)
-    DATABASE_ENCRYPTION_KEY = os.environ.get('DATABASE_ENCRYPTION_KEY', None)
+    DATABASE_ENCRYPTION_KEY = os.environ.get('DATABASE_ENCRYPTION_KEY', None) # must be 16, 24 or 32 bytes long
     CONDITION_TARGET = os.environ.get('CONDITION_TARGET', None)
     CONDITION_STATEMENT = os.environ.get('CONDITION_STATEMENT', None)
     TWILLIO_SID = os.environ.get('TWILLIO_SID', None)
