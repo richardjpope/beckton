@@ -4,6 +4,7 @@ class Config(object):
     DEBUG = False
     MONGODB_DB = os.environ.get('MONGODB_DB', None)
     MONGODB_HOST = os.environ.get('MONGODB_HOST', None)
+    MONGODB_PORT = os.environ.get('MONGODB_PORT', None)
     SECRET_KEY = os.environ.get('SECRET_KEY', None)
     DATABASE_ENCRYPTION_KEY = os.environ.get('DATABASE_ENCRYPTION_KEY', None)
     CONDITION_TARGET = os.environ.get('CONDITION_TARGET', None)
@@ -17,7 +18,7 @@ class Config(object):
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    MONGODB_SETTINGS = {'DB': "beckton_dev"}
+    MONGODB_DB = "beckton_dev"
     SECRET_KEY = 'not-a-secret'
     DATABASE_ENCRYPTION_KEY = "DO NOT USE THIS KEY XXXXXXXXXXXX" #do not use this in production
     CONDITION_TARGET = 10
