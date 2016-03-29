@@ -15,9 +15,6 @@ Run the web app:
 ```
 source bin/activate
 export SETTINGS='config.DevelopmentConfig'
-export TWILLIO_SID='ENTER YOUR TWILLIO SID'
-export TWILLIO_AUTH_TOKEN='ENTER YOUR TWILLIO AUTH TOKEN'
-export TWILLIO_PHONE_NUMBER='ENTER YOUR TWILIO PHONE NUMBER'
 python server.py
 ```
 

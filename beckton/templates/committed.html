@@ -2,5 +2,14 @@
 {% from "_formhelpers.html" import render_checkbox %}
 {% extends "base.html" %}
 {% block content %}
-  {{commitment_count}} out of {{config['CONDITION_TARGET']}}
+  <section class="row">
+    <div class="columns large-12">
+      <h1>Thank you</h1>
+      <p>{{commitment_count}} people have now signed up. The target is {{config['CONDITION_TARGET']}} people.</p>
+      <div class="progress" role="progressbar" tabindex="0" aria-valuenow="{{progress_percent}}" aria-valuemin="0" aria-valuetext="{{progress_percent}} percent" aria-valuemax="100">
+        <span class="meter" style="width:{{progress_percent}}%"></span>
+      </div>
+
+    </div>
+  </section>
 {% endblock %}

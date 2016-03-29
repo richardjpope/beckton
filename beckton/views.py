@@ -42,4 +42,5 @@ def condition():
 @app.route("/done")
 def committed():
     commitment_count = models.Commitment.objects.count()
-    return render_template('committed.html', commitment_count=commitment_count)
+    progress_percent = int(app.config['CONDITION_TARGET'] / commitment_count)
+    return render_template('committed.html', commitment_count=commitment_count, progress_percent=progress_percent)

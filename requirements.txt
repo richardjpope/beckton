@@ -1,6 +1,7 @@
 amqp==1.4.9
 anyjson==0.3.3
 billiard==3.3.0.23
+blinker==1.4
 celery==3.1.23
 Flask==0.10.1
 flask-mongoengine==0.7.5
@@ -16,10 +17,10 @@ mongoengine==0.10.6
 pycrypto==2.6.1
 pymongo==3.2.2
 pytz==2016.3
+redis==2.10.5
 requests==2.9.1
 SecureMongoEngine==0.1.2
 six==1.10.0
 twilio==5.4.0
 Werkzeug==0.11.5
 WTForms==2.1
-redis==2.10.5
