@@ -15,15 +15,15 @@ def pay_start():
     gocardless.client.merchant()
     return "hello"
 
-@app.route("/test")
-def test():
-    tasks.send_sms.delay('+447976730458', 'TESTING TESTING')
-    return "done"
-
 @app.route("/", methods=['GET', 'POST'])
 def condition():
 
     condition_statement = app.config['CONDITION_STATEMENT']
+    commitment_count = models.Commitment.objects.count()
+    commitment_percent = int(float(commitment_count) / float(app.config['CONDITION_TARGET']) * 100)
+    print commitment_count
+    print app.config['CONDITION_TARGET']
+
     form = forms.Commitment()
     duplicate = False
 
@@ -37,10 +37,10 @@ def condition():
         except NotUniqueError:
             duplicate = True
 
-    return render_template('condition.html', condition_statement=condition_statement, form=form, duplicate=duplicate)
+    return render_template('condition.html', condition_statement=condition_statement, commitment_count=commitment_count, commitment_percent=commitment_percent, form=form, duplicate=duplicate)
 
 @app.route("/done")
 def committed():
     commitment_count = models.Commitment.objects.count()
-    progress_percent = int(app.config['CONDITION_TARGET'] / commitment_count)
-    return render_template('committed.html', commitment_count=commitment_count, progress_percent=progress_percent)
+    commitment_percent = int(float(commitment_count) / float(app.config['CONDITION_TARGET']) * 100)
+    return render_template('committed.html', commitment_count=commitment_count, commitment_percent=commitment_percent)

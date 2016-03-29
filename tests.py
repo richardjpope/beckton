@@ -53,12 +53,12 @@ class Tests(unittest.TestCase):
     def test_commit_valid(self):
         rv = self.app.post('/', data= {"name": "Greg Orlowski", "mobile_number": "07877666555", "agree": 1}, follow_redirects=True)
         assert rv.status == '200 OK'
-        assert "1 out of %d" % app.config['CONDITION_TARGET'] in rv.data
+        assert "You are the first person to agree. The target is %d people" % app.config['CONDITION_TARGET'] in rv.data
 
     def test_commit_cannot_signup_twice(self):
         rv = self.app.post('/', data= {"name": "Greg Orlowski", "mobile_number": "07877666555", "agree": 1}, follow_redirects=True)
         assert rv.status == '200 OK'
-        assert "1 out of %d" % app.config['CONDITION_TARGET'] in rv.data
+        assert "You are the first person to agree. The target is %d people" % app.config['CONDITION_TARGET'] in rv.data
 
         rv = self.app.post('/', data= {"name": "Greg Orlowski", "mobile_number": "07877666555", "agree": 1}, follow_redirects=True)
         assert rv.status == '200 OK'

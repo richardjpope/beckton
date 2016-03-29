@@ -12,6 +12,8 @@ class Config(object):
     DATABASE_ENCRYPTION_KEY = os.environ.get('DATABASE_ENCRYPTION_KEY', None) # must be 16, 24 or 32 bytes long
     CONDITION_TARGET = os.environ.get('CONDITION_TARGET', None)
     CONDITION_STATEMENT = os.environ.get('CONDITION_STATEMENT', None)
+    CONDITION_TERMS = os.environ.get('CONDITION_STATEMENT', None)
+    CONDITION_BACKGROUND = os.environ.get('CONDITION_BACKGROUND', None) #markdown OK here
     TWILLIO_SID = os.environ.get('TWILLIO_SID', None)
     TWILLIO_AUTH_TOKEN = os.environ.get('TWILLIO_AUTH_TOKEN', None)
     TWILLIO_PHONE_NUMBER = os.environ.get('TWILLIO_PHONE_NUMBER', None)
@@ -25,8 +27,9 @@ class DevelopmentConfig(Config):
     SECRET_KEY = 'not-a-secret'
     DATABASE_ENCRYPTION_KEY = "DO NOT USE THIS KEY XXXXXXXXXXXX" #do not use this in production
     CONDITION_TARGET = 10
-    CONDITION_STATEMENT = "I will join a union if 400 other London Deliveroo drivers do the same"
-    
+    CONDITION_STATEMENT = "I will join a union if 10 other widget makers will do the same"
+    CONDITION_TERMS = "I work for Widget Makers LLP (Delaware)"
+    CONDITION_BACKGROUND = "Employees of [Widget Makers](#) are not currently paid the living wage. If we can get enough people to join the union, we can campaign for change." #markdown OK here
     TWILLIO_SID = os.environ.get('TWILLIO_SID', None)
     TWILLIO_AUTH_TOKEN = os.environ.get('TWILLIO_AUTH_TOKEN', None)
     TWILLIO_PHONE_NUMBER = os.environ.get('TWILLIO_PHONE_NUMBER', None)

@@ -1,5 +1,6 @@
 from flask import Flask, request, redirect, render_template, url_for
 from flask.ext.mongoengine import MongoEngine
+from flaskext.markdown import Markdown
 from mongoengine import NotUniqueError
 from celery import Celery
 import jinja2
@@ -10,6 +11,9 @@ app.config.from_object(os.environ['SETTINGS'])
 
 #Database
 db = MongoEngine(app)
+
+#Markdown
+Markdown(app)
 
 #Tasks
 celery = Celery('app', broker=app.config['CELERY_BROKER_URL'])

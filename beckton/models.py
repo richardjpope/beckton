@@ -1,6 +1,7 @@
 from mongoengine import Document, StringField, signals
 from securemongoengine.fields import *
 from beckton import tasks
+from beckton import app
 
 class Commitment(Document):
     name = EncryptedStringField(max_length=100, required=True)
@@ -9,8 +10,7 @@ class Commitment(Document):
     @classmethod
     def post_save(cls, sender, document, **kwargs):
         if kwargs.get('created', False):
-            tasks.send_committed_message(document)
-
+            tasks.send_committed_message.delay(document.mobile_number)
 
 
     def __init__(self, key, *args, **kwargs):
