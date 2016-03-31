@@ -16,8 +16,8 @@ class Config(object):
     CONDITION_STATEMENT = os.environ.get('CONDITION_STATEMENT', None)
     CONDITION_TERMS = os.environ.get('CONDITION_STATEMENT', None)
     CONDITION_BACKGROUND = os.environ.get('CONDITION_BACKGROUND', None) #markdown OK here
-    CONDITION_RATES = os.environ.get('CONDITION_RATES', [])
-    CONDITION_POSTCODE_AREAS = os.environ.get('CONDITION_POSTCODE_AREAS', '')
+    CONDITION_RATES_CSV = os.environ.get('CONDITION_RATES', [])
+    CONDITION_POSTCODE_AREAS_CSV = os.environ.get('CONDITION_POSTCODE_AREAS', '')
     
     TWILLIO_SID = os.environ.get('TWILLIO_SID', None)
     TWILLIO_AUTH_TOKEN = os.environ.get('TWILLIO_AUTH_TOKEN', None)
