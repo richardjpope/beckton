@@ -1,3 +1,4 @@
+from datetime import datetime
 from mongoengine import Document, StringField, IntField, DateTimeField, signals
 from securemongoengine.fields import *
 from beckton import tasks
@@ -17,6 +18,6 @@ class Commitment(Document):
 
 class Milestone(Document):
     name = StringField(max_length=50, required=True)
-    created_at = DateTimeField(default=datetime.datetime.now)
+    created_at = DateTimeField(default=datetime.now)
 
 signals.post_save.connect(Commitment.post_save, sender=Commitment)
