@@ -14,7 +14,7 @@ class Config(object):
     
     CONDITION_TARGET = os.environ.get('CONDITION_TARGET', None)
     CONDITION_STATEMENT = os.environ.get('CONDITION_STATEMENT', None)
-    CONDITION_TERMS = os.environ.get('CONDITION_STATEMENT', None)
+    CONDITION_TERMS = os.environ.get('CONDITION_TERMS', None)
     CONDITION_BACKGROUND = os.environ.get('CONDITION_BACKGROUND', None) #markdown OK here
     CONDITION_RATES_CSV = os.environ.get('CONDITION_RATES_CSV', '')
     CONDITION_POSTCODE_AREAS_CSV = os.environ.get('CONDITION_POSTCODE_AREAS_CSV', '')
