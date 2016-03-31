@@ -15,6 +15,7 @@ Run the web app:
 ```
 source bin/activate
 export SETTINGS='config.DevelopmentConfig'
+export GOCARDLESS_ACCESS_TOKEN='ENTER YOUR GO CARDLESS ACCESS TOKEN'
 python server.py
 ```
 

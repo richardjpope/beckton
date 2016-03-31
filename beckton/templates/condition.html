@@ -1,9 +1,11 @@
 {% from "_formhelpers.html" import render_field %}
 {% from "_formhelpers.html" import render_checkbox %}
+{% from "_formhelpers.html" import render_radio %}
+
 {% extends "base.html" %}
 {% block content %}
   <section class="row">
-    <div class="columns large-12">
+    <div class="columns large-6 large-offset-3">
       <div class="callout">
         <h1>
           {{condition_statement}} &hellip;
@@ -18,8 +20,10 @@
         {{ form.csrf_token }}
         {{render_field(form.name)}}
         {{render_field(form.mobile_number)}}
+        {{render_field(form.postcode)}}
         {{render_checkbox(form.agree)}}
-        <button type="submit" class="button expand">Done</button>
+        {{render_radio(form.rate)}}
+        <button type="submit" class="button expand">Next</button>
       </form>
     </div>
   </section>

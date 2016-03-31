@@ -15,7 +15,7 @@
 
 {% macro render_checkbox(field) %}
   {% if field.errors %}
-    {{ field(class_="error is-visible", **kwargs) }}
+    {{ field(class_="error", **kwargs) }}
     {{ field.label(class_="error", **kwargs) }}
     <small class="error">
       {% for error in field.errors %}
@@ -25,5 +25,30 @@
   {% else %}
     {{ field() }}
     {{ field.label() }}
+  {% endif %}
+{% endmacro %}
+
+{% macro render_radio(field) %}
+  {% if field.errors %}
+      <ul>
+      {% for subfield in field %}
+        <li>
+          {{ subfield(class_="error", **kwargs) }} {{ subfield.label(class_="error", **kwargs) }}
+        </li>
+      {% endfor %}
+    </ul>
+    <small class="error">
+      {% for error in field.errors %}
+        {{error}}
+      {% endfor %}
+    </small>    
+  {% else %}
+    <ul>
+      {% for subfield in field %}
+        <li>
+          {{ subfield }} {{ subfield.label }}
+        </li>
+      {% endfor %}
+    </ul>
   {% endif %}
 {% endmacro %}
