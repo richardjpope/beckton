@@ -13,7 +13,6 @@ def test():
 
 @app.route("/", methods=['GET', 'POST'])
 def condition():
-    print app.config['CONDITION_RATES']
     condition_statement = app.config['CONDITION_STATEMENT']
     commitment_count = models.Commitment.objects.count()
     commitment_percent = int(float(commitment_count) / float(app.config['CONDITION_TARGET']) * 100)
@@ -25,7 +24,7 @@ def condition():
     if request.method == 'GET':
         session['gocardless_session_token'] = str(uuid.uuid4())
         session.pop('commitment', None)
-    print form.data
+
     if request.method == 'POST' and form.validate():
         session['commitment'] = {'name': form.data['name'], 'mobile_number': form.data['mobile_number'], 'rate': int(form.data['rate'])}
 
