@@ -7,9 +7,12 @@ import forms
 import models
 import tasks
 
-@app.route("/test")
-def test():
-    return url_for('direct_debit', _external=True)
+# #tempoary hack untill there is a database model for each conditional commitment
+# _condition_terms = []
+# for rate in app.config['CONDITION_RATES_CSV'].split('\n'):
+#     items = rate.split(',')
+#     _condition_terms.append((items[0], items[1]))
+
 
 @app.route("/", methods=['GET', 'POST'])
 def condition():
@@ -18,6 +21,7 @@ def condition():
     commitment_percent = int(float(commitment_count) / float(app.config['CONDITION_TARGET']) * 100)
 
     form = forms.Commitment()
+    # form.rate.choices = _condition_terms
     duplicate = False
 
     #clear session

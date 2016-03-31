@@ -16,8 +16,8 @@ class Config(object):
     CONDITION_STATEMENT = os.environ.get('CONDITION_STATEMENT', None)
     CONDITION_TERMS = os.environ.get('CONDITION_STATEMENT', None)
     CONDITION_BACKGROUND = os.environ.get('CONDITION_BACKGROUND', None) #markdown OK here
-    CONDITION_RATES = os.environ.get('CONDITION_RATES', None)
-    CONDITION_POSTCODE_AREAS = os.environ.get('CONDITION_POSTCODE_AREAS', '').split(',')
+    CONDITION_RATES = os.environ.get('CONDITION_RATES', [])
+    CONDITION_POSTCODE_AREAS = os.environ.get('CONDITION_POSTCODE_AREAS', '')
     
     TWILLIO_SID = os.environ.get('TWILLIO_SID', None)
     TWILLIO_AUTH_TOKEN = os.environ.get('TWILLIO_AUTH_TOKEN', None)
@@ -42,8 +42,8 @@ class DevelopmentConfig(Config):
     CONDITION_STATEMENT = "I will join the union if 10 other widget makers will do the same"
     CONDITION_TERMS = "I work for Widget Makers LLP (Delaware)"
     CONDITION_BACKGROUND = "Employees of [Widget Makers](#) are not currently paid the living wage. If we can get enough people to join the union, we can campaign for change." #markdown OK here
-    CONDITION_RATES = [('4', 'Part-time (&pound;4 a month)'), ('8', 'Full-time (&pound;8 a month)')]
-    CONDITION_POSTCODE_AREAS = ['SW9', 'EC1', 'BR4']
+    CONDITION_RATES_CSV = "4,Part-time (&pound;4 a month)\n8,Full-time (&pound;8 a month)"
+    CONDITION_POSTCODE_AREAS_CSV = "SW9,EC1,BR4"
     TWILLIO_SID = os.environ.get('TWILLIO_SID', None)
     TWILLIO_AUTH_TOKEN = os.environ.get('TWILLIO_AUTH_TOKEN', None)
     TWILLIO_PHONE_NUMBER = os.environ.get('TWILLIO_PHONE_NUMBER', None)
