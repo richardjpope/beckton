@@ -5,7 +5,7 @@ from wtforms import BooleanField, TextField, RadioField, validators, ValidationE
 
 #tempoary hack untill there is a database model for each conditional commitment
 _condition_terms = []
-for rate in app.config['CONDITION_RATES_CSV'].split('\n'):
+for rate in app.config['CONDITION_RATES_CSV'].split("\n"):
     items = rate.split(',')
     _condition_terms.append((items[0], items[1]))
 
