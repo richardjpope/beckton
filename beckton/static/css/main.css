@@ -89,7 +89,7 @@ body {
   cursor: auto;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 200;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -1699,12 +1699,12 @@ select {
 /* line 139, ../../assets/vendor/foundation/foundation/components/_accordion.scss */
 .accordion .accordion-navigation.active > a, .accordion dd.active > a {
   background: #e8e8e8;
-  color: #222222;
+  color: #5a554c;
 }
 /* line 140, ../../assets/vendor/foundation/foundation/components/_accordion.scss */
 .accordion .accordion-navigation > a, .accordion dd > a {
   background: #EFEFEF;
-  color: #222222;
+  color: #5a554c;
   display: block;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -1731,7 +1731,7 @@ select {
   border-width: 1px;
   display: block;
   font-size: 0.8125rem;
-  font-weight: normal;
+  font-weight: 200;
   margin-bottom: 1.25rem;
   padding: 0.875rem 1.5rem 0.875rem 0.875rem;
   position: relative;
@@ -2427,14 +2427,14 @@ button, .button {
   display: inline-block;
   padding: 1rem 2rem 1.0625rem 2rem;
   font-size: 1rem;
-  background-color: #64D98A;
-  border-color: #5ECA7F;
+  background-color: #3897D9;
+  border-color: #2d8bcd;
   color: #FFFFFF;
   transition: background-color 300ms ease-out;
 }
 /* line 163, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #5ECA7F;
+  background-color: #2d8bcd;
 }
 /* line 169, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 button:hover, button:focus, .button:hover, .button:focus {
@@ -2555,8 +2555,8 @@ button.round, .button.round {
 }
 /* line 242, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 button.disabled, button[disabled], .button.disabled, .button[disabled] {
-  background-color: #64D98A;
-  border-color: #5ECA7F;
+  background-color: #3897D9;
+  border-color: #2d8bcd;
   color: #FFFFFF;
   box-shadow: none;
   cursor: default;
@@ -2564,7 +2564,7 @@ button.disabled, button[disabled], .button.disabled, .button[disabled] {
 }
 /* line 163, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #5ECA7F;
+  background-color: #2d8bcd;
 }
 /* line 169, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
@@ -2572,7 +2572,7 @@ button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[dis
 }
 /* line 180, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #64D98A;
+  background-color: #3897D9;
 }
 /* line 243, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
@@ -4023,10 +4023,10 @@ label {
   color: #4d4d4d;
   cursor: pointer;
   display: block;
-  font-size: 0.875rem;
-  font-weight: normal;
+  font-size: 1rem;
+  font-weight: 800;
   line-height: 1.5;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   /* Styles for required inputs */
 }
 /* line 392, ../../assets/vendor/foundation/foundation/components/_forms.scss */
@@ -4052,7 +4052,7 @@ label small {
   border-style: solid;
   border-width: 1px;
   display: block;
-  font-size: 0.875rem;
+  font-size: 1rem;
   height: 2.3125rem;
   line-height: 2.3125rem;
   overflow: visible;
@@ -4384,7 +4384,7 @@ fieldset {
 }
 /* line 278, ../../assets/vendor/foundation/foundation/components/_forms.scss */
 fieldset legend {
-  font-weight: bold;
+  font-weight: 800;
   margin: 0;
   margin-left: -0.1875rem;
   padding: 0 0.1875rem;
@@ -4396,7 +4396,7 @@ fieldset legend {
   display: block;
   font-size: 0.75rem;
   font-style: italic;
-  font-weight: normal;
+  font-weight: 200;
   margin-bottom: 1rem;
   margin-top: -1px;
   padding: 0.375rem 0.5625rem 0.5625rem;
@@ -4413,7 +4413,7 @@ span.error, small.error {
   display: block;
   font-size: 0.75rem;
   font-style: italic;
-  font-weight: normal;
+  font-weight: 200;
   margin-bottom: 1rem;
   margin-top: -1px;
   padding: 0.375rem 0.5625rem 0.5625rem;
@@ -4442,7 +4442,7 @@ span.error, small.error {
   display: block;
   font-size: 0.75rem;
   font-style: italic;
-  font-weight: normal;
+  font-weight: 200;
   margin-bottom: 1rem;
   margin-top: -1px;
   padding: 0.375rem 0.5625rem 0.5625rem;
@@ -4946,7 +4946,7 @@ label.error {
   color: #FFFFFF;
   display: none;
   font-family: inherit;
-  font-weight: normal;
+  font-weight: 200;
   position: absolute;
   top: 0;
   width: 95%;
@@ -5021,7 +5021,7 @@ label.error {
 .joyride-tip-guide h5,
 .joyride-tip-guide h6 {
   color: #FFFFFF;
-  font-weight: bold;
+  font-weight: 800;
   line-height: 1.25;
   margin: 0;
 }
@@ -5055,7 +5055,7 @@ label.error {
 .joyride-close-tip {
   color: #777777 !important;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 200;
   line-height: .5 !important;
   position: absolute;
   text-decoration: none;
@@ -5140,7 +5140,7 @@ label.error {
 kbd {
   background-color: #ededed;
   border-color: #dddddd;
-  color: #222222;
+  color: #5a554c;
   border-style: solid;
   border-width: 1px;
   font-family: "Consolas", "Menlo", "Courier", monospace;
@@ -5154,7 +5154,7 @@ kbd {
 .label {
   display: inline-block;
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
+  font-weight: 200;
   line-height: 1;
   margin-bottom: auto;
   position: relative;
@@ -5564,7 +5564,7 @@ ul.pagination {
 }
 /* line 105, ../../assets/vendor/foundation/foundation/components/_pagination.scss */
 ul.pagination li {
-  color: #222222;
+  color: #5a554c;
   font-size: 0.875rem;
   height: 1.5rem;
   margin-left: 0.3125rem;
@@ -5602,7 +5602,7 @@ ul.pagination li.current a, ul.pagination li.current button {
   background: #3897D9;
   color: #FFFFFF;
   cursor: default;
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 75, ../../assets/vendor/foundation/foundation/components/_pagination.scss */
 ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.pagination li.current button:hover, ul.pagination li.current button:focus {
@@ -5634,7 +5634,7 @@ ul.pagination li {
   margin-bottom: 1.25rem;
   padding: 1.25rem;
   background: #F2F1EF;
-  color: #333333;
+  color: #5a554c;
 }
 /* line 61, ../../assets/vendor/foundation/foundation/components/_panels.scss */
 .panel > :first-child {
@@ -5646,7 +5646,7 @@ ul.pagination li {
 }
 /* line 67, ../../assets/vendor/foundation/foundation/components/_panels.scss */
 .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p, .panel li, .panel dl {
-  color: #333333;
+  color: #5a554c;
 }
 /* line 74, ../../assets/vendor/foundation/foundation/components/_panels.scss */
 .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
@@ -5665,7 +5665,7 @@ ul.pagination li {
   margin-bottom: 1.25rem;
   padding: 1.25rem;
   background: #f3f9fd;
-  color: #333333;
+  color: #5a554c;
 }
 /* line 61, ../../assets/vendor/foundation/foundation/components/_panels.scss */
 .panel.callout > :first-child {
@@ -5677,7 +5677,7 @@ ul.pagination li {
 }
 /* line 67, ../../assets/vendor/foundation/foundation/components/_panels.scss */
 .panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p, .panel.callout li, .panel.callout dl {
-  color: #333333;
+  color: #5a554c;
 }
 /* line 74, ../../assets/vendor/foundation/foundation/components/_panels.scss */
 .panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
@@ -5719,7 +5719,7 @@ ul.pagination li {
   color: #EEEEEE;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 200;
   padding: 0.9375rem 1.25rem;
   text-align: center;
 }
@@ -5729,7 +5729,7 @@ ul.pagination li {
   color: #333333;
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: 200;
   padding: 0.9375rem 1.25rem;
   text-align: center;
 }
@@ -5739,7 +5739,7 @@ ul.pagination li {
   border-bottom: dotted 1px #DDDDDD;
   color: #777777;
   font-size: 0.75rem;
-  font-weight: normal;
+  font-weight: 200;
   line-height: 1.4;
   padding: 0.9375rem;
   text-align: center;
@@ -5750,7 +5750,7 @@ ul.pagination li {
   border-bottom: dotted 1px #DDDDDD;
   color: #333333;
   font-size: 0.875rem;
-  font-weight: normal;
+  font-weight: 200;
   padding: 0.9375rem;
   text-align: center;
 }
@@ -6113,7 +6113,7 @@ ul.pagination li {
   color: #AAAAAA;
   cursor: pointer;
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 800;
   line-height: 1;
   position: absolute;
   top: 0.625rem;
@@ -6132,7 +6132,7 @@ ul.pagination li {
 /* line 71, ../../assets/vendor/foundation/foundation/components/_side-nav.scss */
 .side-nav li {
   font-size: 0.875rem;
-  font-weight: normal;
+  font-weight: 200;
   margin: 0 0 0.4375rem 0;
 }
 /* line 76, ../../assets/vendor/foundation/foundation/components/_side-nav.scss */
@@ -6155,7 +6155,7 @@ ul.pagination li {
 .side-nav li.active > a:first-child:not(.button) {
   color: #74b6e4;
   font-family: "Open Sans", sans-serif;
-  font-weight: normal;
+  font-weight: 200;
 }
 /* line 97, ../../assets/vendor/foundation/foundation/components/_side-nav.scss */
 .side-nav li.divider {
@@ -6342,7 +6342,7 @@ ul.pagination li {
   float: left;
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
-  font-weight: normal;
+  font-weight: 200;
   margin-left: 1rem;
   margin-bottom: 0;
 }
@@ -6368,7 +6368,7 @@ ul.pagination li {
   background: #3897D9;
   color: #FFFFFF;
   cursor: default;
-  font-weight: normal;
+  font-weight: 200;
   padding: 0.1875rem 1rem;
 }
 /* line 100, ../../assets/vendor/foundation/foundation/components/_sub-nav.scss */
@@ -6544,7 +6544,7 @@ table {
 /* line 69, ../../assets/vendor/foundation/foundation/components/_tables.scss */
 table caption {
   background: transparent;
-  color: #222222;
+  color: #5a554c;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -6555,9 +6555,9 @@ table thead {
 /* line 82, ../../assets/vendor/foundation/foundation/components/_tables.scss */
 table thead tr th,
 table thead tr td {
-  color: #222222;
+  color: #5a554c;
   font-size: 0.875rem;
-  font-weight: bold;
+  font-weight: 800;
   padding: 0.5rem 0.625rem 0.625rem;
 }
 /* line 92, ../../assets/vendor/foundation/foundation/components/_tables.scss */
@@ -6567,15 +6567,15 @@ table tfoot {
 /* line 96, ../../assets/vendor/foundation/foundation/components/_tables.scss */
 table tfoot tr th,
 table tfoot tr td {
-  color: #222222;
+  color: #5a554c;
   font-size: 0.875rem;
-  font-weight: bold;
+  font-weight: 800;
   padding: 0.5rem 0.625rem 0.625rem;
 }
 /* line 107, ../../assets/vendor/foundation/foundation/components/_tables.scss */
 table tr th,
 table tr td {
-  color: #222222;
+  color: #5a554c;
   font-size: 0.875rem;
   padding: 0.5625rem 0.625rem;
   text-align: left;
@@ -6622,7 +6622,7 @@ table tr td {
 .tabs .tab-title > a {
   display: block;
   background-color: #EFEFEF;
-  color: #222222;
+  color: #5a554c;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   padding: 1rem 2rem;
@@ -6636,7 +6636,7 @@ table tr td {
 .tabs dd.active > a,
 .tabs .tab-title.active > a {
   background-color: #FFFFFF;
-  color: #222222;
+  color: #5a554c;
 }
 /* line 64, ../../assets/vendor/foundation/foundation/components/_tabs.scss */
 .tabs.radius dd:first-child a,
@@ -6752,7 +6752,7 @@ table tr td {
   border-bottom: dotted 1px #CCCCCC;
   color: #333333;
   cursor: help;
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 44, ../../assets/vendor/foundation/foundation/components/_tooltips.scss */
 .has-tip:hover, .has-tip:focus {
@@ -6770,7 +6770,7 @@ table tr td {
   color: #FFFFFF;
   display: none;
   font-size: 0.875rem;
-  font-weight: normal;
+  font-weight: 200;
   line-height: 1.3;
   max-width: 300px;
   padding: 0.75rem;
@@ -6819,7 +6819,7 @@ table tr td {
   color: #777777;
   display: block;
   font-size: 0.625rem;
-  font-weight: normal;
+  font-weight: 200;
 }
 
 @media only screen {
@@ -6966,7 +6966,7 @@ meta.foundation-mq-topbar {
 .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
   color: #FFFFFF;
   display: block;
-  font-weight: normal;
+  font-weight: 200;
   padding: 0 0.9375rem;
   width: 75%;
 }
@@ -6981,7 +6981,7 @@ meta.foundation-mq-topbar {
   color: #FFFFFF;
   display: block;
   font-size: 0.8125rem;
-  font-weight: bold;
+  font-weight: 800;
   height: 2.8125rem;
   line-height: 2.8125rem;
   padding: 0 0.9375rem;
@@ -7080,7 +7080,7 @@ meta.foundation-mq-topbar {
   display: block;
   font-family: "Open Sans", sans-serif;
   font-size: 0.8125rem;
-  font-weight: normal;
+  font-weight: 200;
   padding-left: 0.9375rem;
   padding: 12px 0 12px 0.9375rem;
   text-transform: none;
@@ -7092,12 +7092,12 @@ meta.foundation-mq-topbar {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   background-color: #3897D9;
-  border-color: #237bb7;
+  border-color: #2d8bcd;
   color: #FFFFFF;
 }
 /* line 163, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
-  background-color: #237bb7;
+  background-color: #2d8bcd;
 }
 /* line 169, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
@@ -7106,12 +7106,12 @@ meta.foundation-mq-topbar {
 /* line 352, ../../assets/vendor/foundation/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button.secondary {
   background-color: #64D98A;
-  border-color: #5ECA7F;
+  border-color: #32cc64;
   color: #FFFFFF;
 }
 /* line 163, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
-  background-color: #5ECA7F;
+  background-color: #32cc64;
 }
 /* line 169, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
@@ -7179,12 +7179,12 @@ meta.foundation-mq-topbar {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   background-color: #3897D9;
-  border-color: #237bb7;
+  border-color: #2d8bcd;
   color: #FFFFFF;
 }
 /* line 163, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
-  background-color: #237bb7;
+  background-color: #2d8bcd;
 }
 /* line 169, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
@@ -7193,12 +7193,12 @@ meta.foundation-mq-topbar {
 /* line 365, ../../assets/vendor/foundation/foundation/components/_top-bar.scss */
 .top-bar-section ul li > button.secondary {
   background-color: #64D98A;
-  border-color: #5ECA7F;
+  border-color: #32cc64;
   color: #FFFFFF;
 }
 /* line 163, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 .top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
-  background-color: #5ECA7F;
+  background-color: #32cc64;
 }
 /* line 169, ../../assets/vendor/foundation/foundation/components/_buttons.scss */
 .top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
@@ -7264,7 +7264,7 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li:hover:not(.has-form) > a {
   background-color: #555555;
   color: #FFFFFF;
-  background: #222222;
+  background: #5a554c;
 }
 /* line 383, ../../assets/vendor/foundation/foundation/components/_top-bar.scss */
 .top-bar-section ul li.active > a {
@@ -7339,12 +7339,12 @@ meta.foundation-mq-topbar {
 }
 /* line 444, ../../assets/vendor/foundation/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li a {
-  font-weight: normal;
+  font-weight: 200;
   padding: 8px 0.9375rem;
 }
 /* line 447, ../../assets/vendor/foundation/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li a.parent-link {
-  font-weight: normal;
+  font-weight: 200;
 }
 /* line 452, ../../assets/vendor/foundation/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li.title h5, .top-bar-section .dropdown li.parent-link {
@@ -7374,7 +7374,7 @@ meta.foundation-mq-topbar {
 .top-bar-section .dropdown label {
   color: #777777;
   font-size: 0.625rem;
-  font-weight: bold;
+  font-weight: 800;
   margin-bottom: 0;
   padding: 8px 0.9375rem 2px;
   text-transform: uppercase;
@@ -7469,7 +7469,7 @@ meta.foundation-mq-topbar {
   /* line 553, ../../assets/vendor/foundation/foundation/components/_top-bar.scss */
   .top-bar-section li.hover > a:not(.button) {
     background-color: #555555;
-    background: #222222;
+    background: #5a554c;
     color: #FFFFFF;
   }
   /* line 563, ../../assets/vendor/foundation/foundation/components/_top-bar.scss */
@@ -7481,7 +7481,7 @@ meta.foundation-mq-topbar {
   /* line 567, ../../assets/vendor/foundation/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button):hover {
     background-color: #555555;
-    background: #222222;
+    background: #5a554c;
   }
   /* line 577, ../../assets/vendor/foundation/foundation/components/_top-bar.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button) {
@@ -7575,7 +7575,7 @@ meta.foundation-mq-topbar {
   .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
     background-color: #555555;
     color: #FFFFFF;
-    background: #222222;
+    background: #5a554c;
   }
   /* line 663, ../../assets/vendor/foundation/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li label {
@@ -7625,7 +7625,7 @@ meta.foundation-mq-topbar {
   /* line 716, ../../assets/vendor/foundation/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:hover > a {
     background-color: #555555;
-    background: #222222;
+    background: #5a554c;
     color: #FFFFFF;
   }
   /* line 725, ../../assets/vendor/foundation/foundation/components/_top-bar.scss */
@@ -7930,7 +7930,7 @@ a img {
 p {
   font-family: inherit;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 200;
   line-height: 1.6;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility;
@@ -8000,7 +8000,7 @@ h6 {
 .subheader {
   line-height: 1.4;
   color: #7ebbe6;
-  font-weight: normal;
+  font-weight: 200;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
 }
@@ -8025,7 +8025,7 @@ i {
 /* line 296, ../../assets/vendor/foundation/foundation/components/_type.scss */
 strong,
 b {
-  font-weight: bold;
+  font-weight: 800;
   line-height: inherit;
 }
 
@@ -8043,7 +8043,7 @@ code {
   border-width: 1px;
   color: #333333;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: normal;
+  font-weight: 200;
   padding: 0.125rem 0.3125rem 0.0625rem;
 }
 
@@ -8120,7 +8120,7 @@ ol li ol {
 /* line 382, ../../assets/vendor/foundation/foundation/components/_type.scss */
 dl dt {
   margin-bottom: 0.3rem;
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 386, ../../assets/vendor/foundation/foundation/components/_type.scss */
 dl dd {
@@ -8191,19 +8191,19 @@ blockquote p {
 }
 /* line 441, ../../assets/vendor/foundation/foundation/components/_type.scss */
 .vcard .fn {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 0.9375rem;
 }
 
 /* line 448, ../../assets/vendor/foundation/foundation/components/_type.scss */
 .vevent .summary {
-  font-weight: bold;
+  font-weight: 800;
 }
 /* line 450, ../../assets/vendor/foundation/foundation/components/_type.scss */
 .vevent abbr {
   cursor: default;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 800;
   border: none;
   padding: 0 0.0625rem;
 }
@@ -8369,7 +8369,7 @@ blockquote p {
 /* line 185, ../../assets/vendor/foundation/foundation/components/_offcanvas.scss */
 .tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4, .tab-bar h5, .tab-bar h6 {
   color: #FFFFFF;
-  font-weight: bold;
+  font-weight: 800;
   line-height: 2.8125rem;
   margin: 0;
 }
@@ -8582,7 +8582,7 @@ ul.off-canvas-list li label {
   color: #999999;
   display: block;
   font-size: 0.75rem;
-  font-weight: bold;
+  font-weight: 800;
   margin: 0;
   padding: 0.3rem 0.9375rem;
   text-transform: uppercase;
@@ -8959,7 +8959,7 @@ ul.off-canvas-list li a:active {
   border-bottom: none;
   border-top: 1px solid #5e5e5e;
   color: #999999;
-  font-weight: bold;
+  font-weight: 800;
   padding: 0.3rem 0.9375rem;
   text-transform: uppercase;
   margin: 0;
@@ -9022,7 +9022,7 @@ ul.off-canvas-list li a:active {
   border-bottom: none;
   border-top: 1px solid #5e5e5e;
   color: #999999;
-  font-weight: bold;
+  font-weight: 800;
   padding: 0.3rem 0.9375rem;
   text-transform: uppercase;
   margin: 0;
@@ -9086,7 +9086,7 @@ ul.off-canvas-list li a:active {
   border-bottom: none;
   border-top: 1px solid #5e5e5e;
   color: #999999;
-  font-weight: bold;
+  font-weight: 800;
   padding: 0.3rem 0.9375rem;
   text-transform: uppercase;
   margin: 0;
@@ -9144,7 +9144,7 @@ ul.off-canvas-list li a:active {
   border-bottom: none;
   border-top: 1px solid #5e5e5e;
   color: #999999;
-  font-weight: bold;
+  font-weight: 800;
   padding: 0.3rem 0.9375rem;
   text-transform: uppercase;
   margin: 0;
@@ -9738,9 +9738,15 @@ th.hide-for-touch {
 /* line 4, ../../assets/sass/main.scss */
 body {
   margin-top: 1rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
-/* line 8, ../../assets/sass/main.scss */
+/* line 9, ../../assets/sass/main.scss */
 button.button {
-  border-bottom: solid 5px #5ECA7F;
+  border-bottom: solid 5px #2d8bcd;
+}
+
+/* line 13, ../../assets/sass/main.scss */
+.panel h1 {
+  line-height: 1.15;
 }

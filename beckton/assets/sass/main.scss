@@ -3,8 +3,16 @@
 
 body {
   margin-top:1rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 button.button {
   border-bottom: solid 5px $button-bg-hover;
 }
+
+.panel h1 {
+  line-height: 1.15;
+}
+
+// color: #484139;
+// text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
