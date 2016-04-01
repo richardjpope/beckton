@@ -25,6 +25,6 @@ def send_halfway_message():
               
               message = "%d other people have committed to the following: \"%s\"! We'll let you know if the target is met." % (commitment_count, app.config['CONDITION_STATEMENT'])
 
-              for commitment in models.Milestone.objects():
+              for commitment in models.Commitment.objects():
                   _send_sms(commitment.mobile_number, message)
                   time.sleep(1)
