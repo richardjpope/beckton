@@ -1,5 +1,6 @@
 import os
 import json
+from datetime import timedelta
 
 class Config(object):
     DEBUG = False
@@ -32,6 +33,12 @@ class Config(object):
     CELERY_BROKER_URL = os.environ.get('CELERY_BROKER_URL', None)
     CELERY_RESULT_BACKEND = os.environ.get('CELERY_RESULT_BACKEND', None)
     CELERY_TIMEZONE = os.environ.get('CELERY_TIMEZONE', None)
+    CELERYBEAT_SCHEDULE = {
+    'add-every-30-seconds': {
+        'task': 'beckton.tasks.send_halfway_message',
+        'schedule': timedelta(seconds=30)
+    },
+}
 
 class DevelopmentConfig(Config):
     DEBUG = True

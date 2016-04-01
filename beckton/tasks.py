@@ -8,3 +8,6 @@ def send_committed_message(mobile_number):
     client = TwilioRestClient(account=app.config['TWILLIO_SID'], token=app.config['TWILLIO_AUTH_TOKEN'])
     client.messages.create(to=mobile_number, from_=app.config['TWILLIO_PHONE_NUMBER'], body=message)
 
+@celery.task
+def send_halfway_message():
+  print "hello"

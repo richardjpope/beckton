@@ -1,2 +1,2 @@
 web: python server.py
-worker: celery worker --app=beckton.celery
+worker: celery worker --app=beckton.celery -B
