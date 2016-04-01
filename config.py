@@ -13,7 +13,7 @@ class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY', None)
     DATABASE_ENCRYPTION_KEY = os.environ.get('DATABASE_ENCRYPTION_KEY', None) # must be 16, 24 or 32 bytes long
     
-    CONDITION_TARGET = os.environ.get('CONDITION_TARGET', None)
+    CONDITION_TARGET = int(os.environ.get('CONDITION_TARGET', 0))
     CONDITION_STATEMENT = os.environ.get('CONDITION_STATEMENT', None)
     CONDITION_TERMS = os.environ.get('CONDITION_TERMS', None)
     CONDITION_BACKGROUND = os.environ.get('CONDITION_BACKGROUND', None) #markdown OK here
@@ -45,7 +45,7 @@ class DevelopmentConfig(Config):
     MONGODB_DB = "beckton_dev"
     SECRET_KEY = 'not-a-secret'
     DATABASE_ENCRYPTION_KEY = "DO NOT USE THIS KEY XXXXXXXXXXXX" #do not use this in production
-    CONDITION_TARGET = 10
+    CONDITION_TARGET = 2
     CONDITION_STATEMENT = "I will join the union if 10 other widget makers will do the same"
     CONDITION_TERMS = "I work for Widget Makers LLP (Delaware)"
     CONDITION_BACKGROUND = "Employees of [Widget Makers](#) are not currently paid the living wage. If we can get enough people to join the union, we can campaign for change." #markdown OK here

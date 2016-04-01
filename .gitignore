@@ -5,3 +5,4 @@ lib
 *.pyc
 *.DS_Store
 .sass-cache/
+celerybeat-schedule.db
