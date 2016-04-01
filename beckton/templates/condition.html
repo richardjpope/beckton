@@ -29,20 +29,27 @@
   </section>
   <section class="row">
     <div class="columns large-6">
-      <h2>Progress</h2>
-      <div class="progress" role="progressbar" tabindex="0" aria-valuenow="{{commitment_percent}}" aria-valuemin="0" aria-valuetext="{{commitment_percent}} percent" aria-valuemax="100">
-        <span class="meter" style="width:{{commitment_percent}}%"></span>
-      </div>
-      <p>
-        <p>So far {{commitment_count}} {% if commitment_count == 1%}person has{% else %}people have{% endif %} signed up. The target is {{config['CONDITION_TARGET']}} people.</p>
-      </p>
-    </div>
-    <div class="columns large-6">
       <h2>About this campaign</h2>
       {{config['CONDITION_BACKGROUND']|markdown}}
       <p>
         Your information will be stored securely and will not shared with anyone else under any circumstances.
       </p>
+    </div>
+      <div class="columns large-6">
+        <h2>Progress</h2>
+        <div class="progress" role="progressbar" tabindex="0" aria-valuenow="{{commitment_percent}}" aria-valuemin="0" aria-valuetext="{{commitment_percent}} percent" aria-valuemax="100">
+          <span class="meter" style="width:{{commitment_percent}}%"></span>
+        </div>
+        <p>
+          <p>So far {{commitment_count}} {% if commitment_count == 1%}person has{% else %}people have{% endif %} signed up. The target is {{config['CONDITION_TARGET']}} people.</p>
+        </p>
+        <h3>Customer?</h3>
+        <p>
+          There are plenty of things you can do to help this campaign.
+        </p>
+        <p>
+          <a href="#">See what you could do.</a>
+        </p>
     </div>
   </section>
 {% endblock %}

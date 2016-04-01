@@ -1,5 +1,5 @@
 NEXT: use celery beat to send messages at 50% and 100%
-
+* task: a bit of visual design
 * As a worker, I want to be alerted when certain milestones are reached
 * As a worker I would like payments to be taken if the target is met
 * As a customer, I want to be able to pledge my support (somehow)
