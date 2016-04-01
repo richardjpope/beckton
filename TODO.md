@@ -12,10 +12,7 @@ NEXT: use celery beat to send messages at 50% and 100%
 * Task: postcode areas error message in forms.py should replace last comma with 'or'.
 * Task: add a licence
 * Task: add scss setup to readme
-
-.alert-box {
-  text-align:center;
-}
+*Task: sending individual sms messages should be a celery task
 
 DONE:
 

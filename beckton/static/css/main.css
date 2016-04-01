@@ -9763,3 +9763,8 @@ form ul {
 form ul label {
   font-weight: normal;
 }
+
+/* line 28, ../../assets/sass/main.scss */
+.alert-box {
+  text-align: center;
+}

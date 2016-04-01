@@ -12,9 +12,9 @@
         </h1>
         {{ form.csrf_token }}
         {{render_field(form.name)}}
-        {{render_checkbox(form.agree)}}
         {{render_field(form.mobile_number)}}
         {{render_field(form.postcode)}}
+        {{render_checkbox(form.agree)}}
         {{render_radio(form.rate)}}
         <button type="submit" class="button expand">Next</button>
       </form>
