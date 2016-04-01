@@ -30,6 +30,7 @@
 
 {% macro render_radio(field) %}
   {% if field.errors %}
+      {{ field.label(class_="error", **kwargs) }}
       <ul>
       {% for subfield in field %}
         <li>
@@ -43,6 +44,7 @@
       {% endfor %}
     </small>    
   {% else %}
+    {{ field.label() }}
     <ul>
       {% for subfield in field %}
         <li>
