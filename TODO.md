@@ -4,11 +4,18 @@ NEXT: use celery beat to send messages at 50% and 100%
 * As a worker I would like payments to be taken if the target is met
 * As a customer, I want to be able to pledge my support (somehow)
 * Task: js/css assets should be locally hosted
+  - foundation [tick]
+  - jquery
 * As a coordinator I want to be able to message people in exceptional circumstances (e.g. turn up to a PR event)
 * Task: add tests and exception handing for sending sms / tasks.py
 * Task: add modernizer
 * Task: postcode areas error message in forms.py should replace last comma with 'or'.
 * Task: add a licence
+* Task: add scss setup to readme
+
+.alert-box {
+  text-align:center;
+}
 
 DONE:
 

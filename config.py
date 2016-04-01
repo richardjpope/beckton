@@ -2,7 +2,7 @@ import os
 import json
 
 class Config(object):
-    DEBUG = True
+    DEBUG = False
 
     PREFERRED_URL_SCHEME = os.environ.get('PREFERRED_URL_SCHEME', 'https')
 

@@ -6,17 +6,10 @@
 {% block content %}
   <section class="row">
     <div class="columns large-6 large-offset-3">
-      <div class="callout">
+      <form action="" method="post" autocomplete="off" class="panel">
         <h1>
           {{condition_statement}} &hellip;
         </h1>
-      </div>
-      <form action="" method="post" autocomplete="off">
-        {% if duplicate %}
-          <div class="alert-box alert">
-            Someone has already signed up with that phone number
-          </div>
-        {% endif %}
         {{ form.csrf_token }}
         {{render_field(form.name)}}
         {{render_field(form.mobile_number)}}

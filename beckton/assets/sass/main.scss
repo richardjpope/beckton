@@ -1,0 +1,10 @@
+@import '_settings.scss';
+@import '../vendor/foundation/foundation.scss';
+
+body {
+  margin-top:1rem;
+}
+
+button.button {
+  border-bottom: solid 5px $button-bg-hover;
+}

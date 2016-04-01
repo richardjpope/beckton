@@ -3,3 +3,5 @@ include
 lib
 .Python
 *.pyc
+*.DS_Store
+.sass-cache/
