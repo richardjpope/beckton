@@ -9747,6 +9747,19 @@ button.button {
 }
 
 /* line 13, ../../assets/sass/main.scss */
-.panel h1 {
+.panel h1.condition:first-child {
   line-height: 1.15;
+  margin: 1rem 0 1rem 0;
+  border-top: solid 3px #5a554c;
+  padding-top: 0.5rem;
+}
+
+/* line 20, ../../assets/sass/main.scss */
+form ul {
+  list-style-type: none;
+  margin-left: 0.25rem;
+}
+/* line 23, ../../assets/sass/main.scss */
+form ul label {
+  font-weight: normal;
 }

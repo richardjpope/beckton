@@ -10,8 +10,19 @@ button.button {
   border-bottom: solid 5px $button-bg-hover;
 }
 
-.panel h1 {
+.panel h1.condition:first-child {
   line-height: 1.15;
+  margin:$standard-margin *1 0 $standard-margin *1 0;
+  border-top: solid 3px #5a554c;
+  padding-top:$standard-margin / 2;
+}
+
+form ul {
+  list-style-type: none;
+  margin-left:$standard-margin / 4;
+  label {
+    font-weight:normal;
+  }
 }
 
 // color: #484139;

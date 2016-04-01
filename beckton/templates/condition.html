@@ -7,14 +7,14 @@
   <section class="row">
     <div class="columns large-6 large-offset-3">
       <form action="" method="post" autocomplete="off" class="panel">
-        <h1>
-          {{condition_statement}} &hellip;
+        <h1 class="condition">
+          {{condition_statement}}
         </h1>
         {{ form.csrf_token }}
         {{render_field(form.name)}}
+        {{render_checkbox(form.agree)}}
         {{render_field(form.mobile_number)}}
         {{render_field(form.postcode)}}
-        {{render_checkbox(form.agree)}}
         {{render_radio(form.rate)}}
         <button type="submit" class="button expand">Next</button>
       </form>
