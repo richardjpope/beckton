@@ -1,3 +1,10 @@
+Beckton is a tool for creating a new group of paying members for a organsiation, but only if enough people agree to join to make it worth while.
+
+Examples of how it could be used include setting up a new union branch, or a new coopertive buying group.
+
+It uses GoCardless to create and manage payments and Twillio to send updates.
+
+
 ##Installing a local development copy
 
 Must have installed:
@@ -59,9 +66,5 @@ python tests.py
 python manage.py reset
 ```
 
-
-
-
 ## Notes:
-using older version for now:
-http://foundation.zurb.com/sites/docs/v/5.5.3/javascript.html
+https://kclpure.kcl.ac.uk/portal/en/publications/how-the-internet-can-overcome-the-collective-action-problem(7043d36c-a77f-4304-85ce-8987b4ba2903)/export.html
