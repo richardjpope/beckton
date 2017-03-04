@@ -27,6 +27,7 @@ class Config(object):
     BECKTON_RATES_LABEL = os.environ.get('BECKTON_RATES_LABEL', '')
     BECKTON_RATES_CSV = os.environ.get('BECKTON_RATES_CSV', '')
     BECKTON_POSTCODE_AREAS_CSV = os.environ.get('BECKTON_POSTCODE_AREAS_CSV', '') # set to False to allow any postcode
+    BECKTON_SUCCESS = os.environ.get('BECKTON_SUCCESS', '')
 
     CELERY_ACCEPT_CONTENT = ['json']
     CELERY_TASK_SERIALIZER = 'json'
@@ -60,6 +61,7 @@ class DevelopmentConfig(Config):
     BECKTON_STATEMENT = "I will join the union if 10 other widget makers will do the same"
     BECKTON_TERMS = "I work for Widget Makers LLP (Delaware)"
     BECKTON_EXPLANATION = "Employees of [Widget Makers](#) are not currently paid the living wage. If we can get enough people to join the union, we can campaign for change." #markdown OK here
+    BECKTON_SUCCESS = "The target has been met, someone will be in touch"
     BECKTON_RATES_LABEL = "What hours do you work?"
     BECKTON_RATES_CSV = "4,Part-time (&pound;4 a month)|8,Full-time (&pound;8 a month)"
     BECKTON_POSTCODE_AREAS_CSV = "SW9,EC1,BR4" # set to False to allow any postcode

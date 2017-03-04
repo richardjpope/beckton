@@ -1,23 +1,15 @@
- {% from "_formhelpers.html" import render_field %}
-{% from "_formhelpers.html" import render_checkbox %}
-{% from "_formhelpers.html" import render_radio %}
-
 {% extends "base.html" %}
 {% block content %}
   <section class="row">
     <div class="columns large-6 large-offset-3">
-      <form action="" method="post" autocomplete="off" class="callout primary">
-        <h1 class="condition">
-          {{config['BECKTON_STATEMENT']}}
-        </h1>
-        {{ form.csrf_token }}
-        {{render_field(form.name)}}
-        {{render_field(form.mobile_number)}}
-        {{render_field(form.postcode)}}
-        {{render_checkbox(form.agree)}}
-        {{render_radio(form.rate)}}
-        <button type="submit" class="button expanded">Next</button>
-      </form>
+      <div class="callout primary">
+          <h1 class="condition">
+            {{config['BECKTON_STATEMENT']}}
+          </h1>
+          <p>
+            {{config['BECKTON_SUCCESS']}}
+          </p>
+        </div>
     </div>
   </section>
   <section class="row">
