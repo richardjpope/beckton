@@ -3,7 +3,6 @@ from beckton import app
 from mongoengine import connect
 from celery.task.control import discard_all as celery_discard_all
 
-
 manager = Manager(app)
 
 @manager.command

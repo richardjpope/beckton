@@ -2,6 +2,8 @@ bin
 include
 lib
 .Python
+.sass-cache
+node_modules/
 *.pyc
 *.DS_Store
 .sass-cache/

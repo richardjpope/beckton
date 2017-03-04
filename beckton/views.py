@@ -13,7 +13,6 @@ import tasks
 #     items = rate.split(',')
 #     _condition_terms.append((items[0], items[1]))
 
-
 @app.route("/", methods=['GET', 'POST'])
 def condition():
     condition_statement = app.config['CONDITION_STATEMENT']

@@ -1,4 +1,4 @@
-{% from "_formhelpers.html" import render_field %}
+ {% from "_formhelpers.html" import render_field %}
 {% from "_formhelpers.html" import render_checkbox %}
 {% from "_formhelpers.html" import render_radio %}
 
@@ -6,7 +6,7 @@
 {% block content %}
   <section class="row">
     <div class="columns large-6 large-offset-3">
-      <form action="" method="post" autocomplete="off" class="panel">
+      <form action="" method="post" autocomplete="off" class="callout primary">
         <h1 class="condition">
           {{condition_statement}}
         </h1>
@@ -16,7 +16,7 @@
         {{render_field(form.postcode)}}
         {{render_checkbox(form.agree)}}
         {{render_radio(form.rate)}}
-        <button type="submit" class="button expand">Next</button>
+        <button type="submit" class="button expanded">Next</button>
       </form>
     </div>
   </section>
@@ -31,17 +31,10 @@
       <div class="columns large-6">
         <h2>Progress</h2>
         <div class="progress" role="progressbar" tabindex="0" aria-valuenow="{{commitment_percent}}" aria-valuemin="0" aria-valuetext="{{commitment_percent}} percent" aria-valuemax="100">
-          <span class="meter" style="width:{{commitment_percent}}%"></span>
+          <span class="progress-meter" style="width:{{commitment_percent}}%"></span>
         </div>
         <p>
           <p>So far {{commitment_count}} {% if commitment_count == 1%}person has{% else %}people have{% endif %} signed up. The target is {{config['CONDITION_TARGET']}} people.</p>
-        </p>
-        <h3>Customer?</h3>
-        <p>
-          There are plenty of things you can do to help this campaign.
-        </p>
-        <p>
-          <a href="#">See what you could do.</a>
         </p>
     </div>
   </section>

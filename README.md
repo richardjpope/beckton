@@ -1,12 +1,21 @@
 ##Installing a local development copy
 
+Must have installed:
+
+Node
+Python + virtualenv
+MongoDB
+
+
 Clone this repository and then:
 
 ```
 virtualenv .
 source bin/activate
 pip install -re requirements.txt
+npm install
 ```
+
 
 ##Running a local copy
 
@@ -27,6 +36,12 @@ export TWILLIO_SID='ENTER YOUR TWILLIO SID'
 export TWILLIO_AUTH_TOKEN='ENTER YOUR TWILLIO AUTH TOKEN'
 export TWILLIO_PHONE_NUMBER='ENTER YOUR TWILIO PHONE NUMBER'
 celery -A beckton.celery worker
+```
+
+Run the assets compiler (in a separate terminal):
+
+```
+grunt
 ```
 
 ##Running tests locally
