@@ -8,19 +8,19 @@ import models
 import tasks
 
 # #tempoary hack untill there is a database model for each conditional commitment
-# _condition_terms = []
-# for rate in app.config['CONDITION_RATES_CSV'].split('\n'):
+# _BECKTON_TERMS = []
+# for rate in app.config['BECKTON_RATES_CSV'].split('\n'):
 #     items = rate.split(',')
-#     _condition_terms.append((items[0], items[1]))
+#     _BECKTON_TERMS.append((items[0], items[1]))
 
 @app.route("/", methods=['GET', 'POST'])
 def condition():
-    condition_statement = app.config['CONDITION_STATEMENT']
+    BECKTON_STATEMENT = app.config['BECKTON_STATEMENT']
     commitment_count = models.Commitment.objects.count()
-    commitment_percent = int(float(commitment_count) / float(app.config['CONDITION_TARGET']) * 100)
+    commitment_percent = int(float(commitment_count) / float(app.config['BECKTON_TARGET']) * 100)
 
     form = forms.Commitment()
-    # form.rate.choices = _condition_terms
+    # form.rate.choices = _BECKTON_TERMS
     duplicate = False
 
     #clear session
@@ -37,7 +37,7 @@ def condition():
         else:
             flash('Someone has already signed up with that phone number', 'error')
 
-    return render_template('condition.html', condition_statement=condition_statement, commitment_count=commitment_count, commitment_percent=commitment_percent, form=form, duplicate=duplicate)
+    return render_template('condition.html', BECKTON_STATEMENT=BECKTON_STATEMENT, commitment_count=commitment_count, commitment_percent=commitment_percent, form=form, duplicate=duplicate)
 
 @app.route("/direct-debit", methods=['GET', 'POST'])
 def direct_debit():
@@ -89,5 +89,5 @@ def direct_debit_callback():
 def committed():
 
     commitment_count = models.Commitment.objects.count()
-    commitment_percent = int(float(commitment_count) / float(app.config['CONDITION_TARGET']) * 100)
+    commitment_percent = int(float(commitment_count) / float(app.config['BECKTON_TARGET']) * 100)
     return render_template('committed.html', commitment_count=commitment_count, commitment_percent=commitment_percent)

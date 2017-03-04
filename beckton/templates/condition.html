@@ -8,7 +8,7 @@
     <div class="columns large-6 large-offset-3">
       <form action="" method="post" autocomplete="off" class="callout primary">
         <h1 class="condition">
-          {{condition_statement}}
+          {{BECKTON_STATEMENT}}
         </h1>
         {{ form.csrf_token }}
         {{render_field(form.name)}}
@@ -23,7 +23,7 @@
   <section class="row">
     <div class="columns large-6">
       <h2>About this campaign</h2>
-      {{config['CONDITION_BACKGROUND']|markdown}}
+      {{config['BECKTON_EXPLANATION']|markdown}}
       <p>
         Your information will be stored securely and will not shared with anyone else under any circumstances.
       </p>
@@ -34,7 +34,7 @@
           <span class="progress-meter" style="width:{{commitment_percent}}%"></span>
         </div>
         <p>
-          <p>So far {{commitment_count}} {% if commitment_count == 1%}person has{% else %}people have{% endif %} signed up. The target is {{config['CONDITION_TARGET']}} people.</p>
+          <p>So far {{commitment_count}} {% if commitment_count == 1%}person has{% else %}people have{% endif %} signed up. The target is {{config['BECKTON_TARGET']}} people.</p>
         </p>
     </div>
   </section>

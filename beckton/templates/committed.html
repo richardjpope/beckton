@@ -6,7 +6,7 @@
     <div class="columns large-12">
       <div class="panel">
         <h1>Thank you</h1>
-        <p>{% if commitment_count == 1%}You are the first person to agree{% else %} {{commitment_count}} people have now signed up{% endif %}. The target is {{config['CONDITION_TARGET']}} people.</p>
+        <p>{% if commitment_count == 1%}You are the first person to agree{% else %} {{commitment_count}} people have now signed up{% endif %}. The target is {{config['BECKTON_TARGET']}} people.</p>
         <div class="progress" role="progressbar" tabindex="0" aria-valuenow="{{commitment_percent}}" aria-valuemin="0" aria-valuetext="{{commitment_percent}} percent" aria-valuemax="100">
           <span class="meter animate" style="width:{{commitment_percent}}%"></span>
         </div>

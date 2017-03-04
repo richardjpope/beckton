@@ -1,4 +1,4 @@
-Beckton is a tool for creating a new group of paying members for a organsiation, but only if enough people agree to join to make it worth while.
+Beckton is a tool for creating a new group of paying members, but only if enough people agree to join to make it worth while.
 
 Examples of how it could be used include setting up a new union branch, or a new coopertive buying group.
 
