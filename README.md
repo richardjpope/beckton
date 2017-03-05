@@ -2,6 +2,8 @@
 
 Beckton is a tool for creating a new group of paying members, but only if enough people agree to join to make it worth while. It could be used include setting up a new union branch, or a new cooperative purchasing group. It uses [GoCardless](https://gocardless.com) to create and manage payments and [Twillio](https://www.twilio.com/) to send updates.
 
+* [Screenshots](#screenshots)
+* [getting started](#getting-started)
 
 
 ##Screenshots
@@ -11,7 +13,7 @@ Beckton is a tool for creating a new group of paying members, but only if enough
 <img src="https://github.com/memespring/beckton/raw/master/docs/step4.png" width="250"/>
 <img src="https://github.com/memespring/beckton/raw/master/docs/step5.png" width="250"/>
 
-##Installing a local development copy
+##Getting started
 
 Must have installed:
 
