@@ -5,7 +5,11 @@ Examples of how it could be used include setting up a new union branch, or a new
 It uses GoCardless to create and manage payments and Twillio to send updates.
 
 ##Screenshots
-<img src="https://github.com/memespring/beckton/raw/master/docs/screenshot.png" width="250"/>
+<img src="hhttps://github.com/memespring/beckton/raw/master/docs/step1.png" width="250"/>
+<img src="hhttps://github.com/memespring/beckton/raw/master/docs/step2.png" width="250"/>
+<img src="hhttps://github.com/memespring/beckton/raw/master/docs/step3.png" width="250"/>
+<img src="hhttps://github.com/memespring/beckton/raw/master/docs/step4.png" width="250"/>
+<img src="hhttps://github.com/memespring/beckton/raw/master/docs/step5.png" width="250"/>
 
 ##Installing a local development copy
 
