@@ -75,17 +75,16 @@ grunt
 ```
 
 ##Settings
-``` BECKTON_TARGET ``` The number of people who need to sign up before payments are taken
-``` BECKTON_STATEMENT ``` The statement that people are agreeing to e.g. I will join a tea club if 10 other people do too
-``` BECKTON_TERMS ``` An additional thing that people confirm e.g. I am a resident of Barking and Dagenham"
-``` BECKTON_EXPLANATION ``` Some words explaining the context of this campaign. this is displaid on the 1st page. Markdown is OK.
-``` BECKTON_RATES_LABEL ``` The label for the radio buttons for choosing which rate to pay e.g. what hours do you work?
-``` BECKTON_RATES_CSV ``` What rate options and prices to display e.g. "4,Part-time (&pound;4 a month)|8,Full-time (&pound;8 a month)"
-``` BECKTON_POSTCODE_AREAS_CSV ``` Limit signups to specific UK postcodes e.g. "SW9,EC1,BR4" Set to False to allow any postcode
-``` BECKTON_SUCCESS ``` The message to display on the 1st page when the target has been met e.g. "The target has been met - someone will be in touch"
-``` BECKTON_DIRECT_DEBIT_CURRENCY ``` The currency for direct debits (defaults to "GBP")
-``` BECKTON_DIRECT_DEBIT_NAME ``` What the subscription should be called in GoCardless
-
+* ``` BECKTON_TARGET ``` The number of people who need to sign up before payments are taken
+* ``` BECKTON_STATEMENT ``` The statement that people are agreeing to e.g. I will join a tea club if 10 other people do too
+* ``` BECKTON_TERMS ``` An additional thing that people confirm e.g. I am a resident of Barking and Dagenham"
+* ``` BECKTON_EXPLANATION ``` Some words explaining the context of this campaign. this is displaid on the 1st page. Markdown is OK.
+* ``` BECKTON_RATES_LABEL ``` The label for the radio buttons for choosing which rate to pay e.g. what hours do you work?
+* ``` BECKTON_RATES_CSV ``` What rate options and prices to display e.g. "4,Part-time (&pound;4 a month)|8,Full-time (&pound;8 a month)"
+* ``` BECKTON_POSTCODE_AREAS_CSV ``` Limit signups to specific UK postcodes e.g. "SW9,EC1,BR4" Set to False to allow any postcode
+* ``` BECKTON_SUCCESS ``` The message to display on the 1st page when the target has been met e.g. "The target has been met - someone will be in touch"
+* ``` BECKTON_DIRECT_DEBIT_CURRENCY ``` The currency for direct debits (defaults to "GBP")
+* ``` BECKTON_DIRECT_DEBIT_NAME ``` What the subscription should be called in GoCardless
 
 
 ##Testing
