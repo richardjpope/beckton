@@ -3,7 +3,10 @@
 Beckton is a tool for creating a new group of paying members, but only if enough people agree to join to make it worth while. It could be used include setting up a new union branch, or a new cooperative purchasing group. It uses [GoCardless](https://gocardless.com) to create and manage payments and [Twillio](https://www.twilio.com/) to send updates.
 
 * [Screenshots](#screenshots)
-* [getting started](#getting-started)
+* [Getting started](#getting-started)
+* [Settings](#settings)
+* [Testing](#testing)
+* [Resetting the database](resetting-the-database)
 
 
 ##Screenshots
@@ -15,26 +18,30 @@ Beckton is a tool for creating a new group of paying members, but only if enough
 
 ##Getting started
 
-Must have installed:
+This section describes how to get a development copy of Beckton working.
 
-Node
-Python + virtualenv
-MongoDB
+You must have the following things installed before you start
+
+* [Node](https://nodejs.org/en/)
+* [Python](https://www.python.org)
+* [Virtualenv](https://virtualenv.pypa.io/en/stable/)
+* [MongoDB](https://www.mongodb.com)
 
 
-Clone this repository and then:
+Clone this repository and install the requirements:
 
 ```
+git clone git+https://github.com/memespring/beckton.git
+cd beckton
 virtualenv .
 source bin/activate
-pip install -re requirements.txt
+pip install -r requirements.txt
 npm install
 ```
 
+To run beckton, you need to run several different things:
 
-##Running a local copy
-
-Run the web app:
+To run the web app:
 
 ```
 source bin/activate
@@ -67,7 +74,11 @@ Run the assets compiler (in a separate terminal):
 grunt
 ```
 
-##Running tests locally
+##Testing
+
+Note: test coverage is currently much lower than it should be.
+
+To run the tests:
 
 ```
 source bin/activate
@@ -75,9 +86,7 @@ export SETTINGS='config.TestingConfig'
 python tests.py
 ```
 
-##Management commands
-
-###Reset everything
+##Resetting the database
 ```
 python manage.py reset
 ```
