@@ -10,6 +10,7 @@ class Commitment(Document):
     name = EncryptedStringField(key=_key, max_length=100, required=True)
     mobile_number = EncryptedStringField(key=_key, required=True, max_length=20, unique=True)
     rate = IntField(required=True)
+    gocardless_mandate_id = EncryptedStringField(key=_key, required=False, max_length=255)
 
     @classmethod
     def post_save(cls, sender, document, **kwargs):

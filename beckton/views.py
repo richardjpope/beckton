@@ -59,20 +59,25 @@ def direct_debit_callback():
         commitment.name = session['commitment']['name']
         commitment.mobile_number = session['commitment']['mobile_number']
         commitment.rate = session['commitment']['rate']
-        commitment.save()
+        commitment = commitment.save()
 
         #complete the direct debit mandate
         client = gocardless_pro.Client(access_token=app.config['GOCARDLESS_ACCESS_TOKEN'], environment=app.config['GOCARDLESS_ENVIRONMENT'])
         redirect_flow_id = request.args.get('redirect_flow_id')
-        client.redirect_flows.complete(redirect_flow_id, params={'session_token': session['gocardless_session_token']})
+        redirect_flow = client.redirect_flows.complete(redirect_flow_id, params={'session_token': session['gocardless_session_token']})
+
+        #save the mandate
+        commitment.gocardless_mandate_id = redirect_flow.links.mandate
+        commitment.save()
 
     except NotUniqueError:
         flash('Someone has already signed up with that phone number', 'error')
         return redirect(url_for('condition'))
     except gocardless_pro.errors.GoCardlessProError:
         flash('Sorry, something went wrong, the direct debit mandate has not been created', 'error')
-        return redirect(url_for('condition'))
         commitment.delete()
+        return redirect(url_for('condition'))
+        
 
     #clear session
     session.pop('gocardless_session_token', None)

@@ -28,7 +28,9 @@ class Config(object):
     BECKTON_RATES_CSV = os.environ.get('BECKTON_RATES_CSV', '')
     BECKTON_POSTCODE_AREAS_CSV = os.environ.get('BECKTON_POSTCODE_AREAS_CSV', '') # set to False to allow any postcode
     BECKTON_SUCCESS = os.environ.get('BECKTON_SUCCESS', '')
-
+    BECKTON_DIRECT_DEBIT_CURRENCY = os.environ.get('BECKTON_DIRECT_DEBIT_CURRENCY', 'GBP')
+    BECKTON_DIRECT_DEBIT_NAME = os.environ.get('BECKTON_DIRECT_DEBIT_NAME', '')
+    CELERY_TIMEZONE = 'UTC'
     CELERY_ACCEPT_CONTENT = ['json']
     CELERY_TASK_SERIALIZER = 'json'
     CELERY_RESULT_SERIALIZER = 'json'
@@ -37,8 +39,16 @@ class Config(object):
     CELERY_RESULT_BACKEND = os.environ.get('CELERY_RESULT_BACKEND', None)
     CELERY_TIMEZONE = os.environ.get('CELERY_TIMEZONE', None)
     CELERYBEAT_SCHEDULE = {
-    'add-every-30-seconds': {
+    'send_halfway_message': {
         'task': 'beckton.tasks.send_halfway_message',
+        'schedule': timedelta(seconds=30)
+    },
+    'send_target_complete_message': {
+        'task': 'beckton.tasks.send_target_complete_message',
+        'schedule': timedelta(seconds=30)
+    },
+    'create_subscriptions': {
+        'task': 'beckton.tasks.create_subscriptions',
         'schedule': timedelta(seconds=30)
     },
 }
@@ -55,8 +65,8 @@ class DevelopmentConfig(Config):
 
     CELERY_BROKER_URL='mongodb://localhost:27017/beckton-tasks'
     CELERY_RESULT_BACKEND='mongodb://localhost:27017/beckton-tasks'
-    CELERY_TIMEZONE = 'Europe/London'
 
+    BECKTON_DIRECT_DEBIT_NAME = 'Beckton'
     BECKTON_TARGET = 2
     BECKTON_STATEMENT = "I will join the union if 10 other widget makers will do the same"
     BECKTON_TERMS = "I work for Widget Makers LLP (Delaware)"
