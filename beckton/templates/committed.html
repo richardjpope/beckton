@@ -3,7 +3,7 @@
 {% extends "base.html" %}
 {% block content %}
   <section class="row">
-    <div class="columns large-12">
+    <div class="columns large-6 large-offset-3">
       <div class="panel">
         <h1>Thank you</h1>
         <p>{% if commitment_count == 1%}You are the first person to agree{% else %} {{commitment_count}} people have now signed up{% endif %}. The target is {{config['BECKTON_TARGET']}} people.</p>

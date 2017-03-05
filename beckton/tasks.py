@@ -60,7 +60,7 @@ def create_subscriptions():
                     "currency": app.config['BECKTON_DIRECT_DEBIT_CURRENCY'],
                     "name": app.config['BECKTON_DIRECT_DEBIT_NAME'],
                     "interval_unit": "monthly",
-                    "day_of_month":  "1"
+                    "day_of_month":  "1",
                     "links": {
                       "mandate": commitment.gocardless_mandate_id
                     }
