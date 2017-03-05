@@ -37,10 +37,18 @@ export GOCARDLESS_ACCESS_TOKEN='ENTER YOUR GO CARDLESS ACCESS TOKEN'
 python server.py
 ```
 
+Run the scheduler (in a separate terminal):
+```
+source bin/activate
+export SETTINGS='config.DevelopmentConfig'
+celery -A beckton.celery beat
+```
+
 Run the message que (in a separate terminal):
 ```
 source bin/activate
 export SETTINGS='config.DevelopmentConfig'
+export GOCARDLESS_ACCESS_TOKEN='ENTER YOUR GO CARDLESS ACCESS TOKEN'
 export TWILLIO_SID='ENTER YOUR TWILLIO SID'
 export TWILLIO_AUTH_TOKEN='ENTER YOUR TWILLIO AUTH TOKEN'
 export TWILLIO_PHONE_NUMBER='ENTER YOUR TWILIO PHONE NUMBER'
