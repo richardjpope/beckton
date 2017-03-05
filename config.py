@@ -26,10 +26,11 @@ class Config(object):
     BECKTON_EXPLANATION = os.environ.get('BECKTON_EXPLANATION', None) #markdown OK here
     BECKTON_RATES_LABEL = os.environ.get('BECKTON_RATES_LABEL', '')
     BECKTON_RATES_CSV = os.environ.get('BECKTON_RATES_CSV', '')
-    BECKTON_POSTCODE_AREAS_CSV = os.environ.get('BECKTON_POSTCODE_AREAS_CSV', '') # set to False to allow any postcode
+    BECKTON_POSTCODE_AREAS_CSV = os.environ.get('BECKTON_POSTCODE_AREAS_CSV', False) # set to False to allow any postcode
     BECKTON_SUCCESS = os.environ.get('BECKTON_SUCCESS', '')
     BECKTON_DIRECT_DEBIT_CURRENCY = os.environ.get('BECKTON_DIRECT_DEBIT_CURRENCY', 'GBP')
     BECKTON_DIRECT_DEBIT_NAME = os.environ.get('BECKTON_DIRECT_DEBIT_NAME', '')
+    
     CELERY_TIMEZONE = 'UTC'
     CELERY_ACCEPT_CONTENT = ['json']
     CELERY_TASK_SERIALIZER = 'json'
