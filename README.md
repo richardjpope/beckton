@@ -1,6 +1,9 @@
 #Beckton - build groups of paying members
 
-Beckton is a tool for creating a new group of paying members, but only if enough people agree to join to make it worth while. It could be used include setting up a new union branch, or a new cooperative purchasing group. It uses [GoCardless](https://gocardless.com) to create and manage payments and [Twillio](https://www.twilio.com/) to send updates.
+Beckton is a tool for creating a new group of paying members, using the [Conditional Commitment](https://kclpure.kcl.ac.uk/portal/en/publications/how-the-internet-can-overcome-the-collective-action-problem(7043d36c-a77f-4304-85ce-8987b4ba2903)/export.html
+) design pattern -  payments are only taken if a target it met.
+
+Beckton could be used for thigns like setting up a new union branch or a new cooperative purchasing group. It uses [GoCardless](https://gocardless.com) to create and manage payments and [Twillio](https://www.twilio.com/) to send updates.
 
 * [Screenshots](#screenshots)
 * [Getting started](#getting-started)
@@ -104,4 +107,3 @@ python tests.py
 python manage.py reset
 ```
 
-https://kclpure.kcl.ac.uk/portal/en/publications/how-the-internet-can-overcome-the-collective-action-problem(7043d36c-a77f-4304-85ce-8987b4ba2903)/export.html
