@@ -74,6 +74,10 @@ Run the assets compiler (in a separate terminal):
 grunt
 ```
 
+##Settings
+``` X ```
+
+
 ##Testing
 
 Note: test coverage is currently much lower than it should be.
