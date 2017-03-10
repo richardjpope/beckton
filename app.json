@@ -30,7 +30,7 @@
     },  
     "BECKTON_POSTCODE_AREAS_CSV": {
       "description": "Limit signups to specific UK postcodes e.g. \"SW9,EC1,BR4\" Set to False to allow any postcode",
-      "value": "False"
+      "required": false
     },  
     "BECKTON_SUCCESS": {
       "description": "The message to display on the 1st page when the target has been met e.g. \"The target has been met - someone will be in touch\"",
