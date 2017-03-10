@@ -55,7 +55,7 @@ class Config(object):
 class DevelopmentConfig(Config):
     DEBUG = True
     MONGODB_DB = "beckton_dev"
-    SECRET_KEY = 'not-a-secret'
+    SECRET_KEY = 'not-a-secret-not-a-secret-not-a-secret-not-a-secret-not-a-secret-not-a-secret-not-a-secret-'
     DATABASE_ENCRYPTION_KEY = "DO NOT USE THIS KEY XXXXXXXXXXXX" #do not use this in production
 
     TWILLIO_SID = os.environ.get('TWILLIO_SID', None)

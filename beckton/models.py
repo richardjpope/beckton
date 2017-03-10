@@ -4,7 +4,7 @@ from securemongoengine.fields import *
 from beckton import tasks
 from beckton import app
 
-_key = app.config['DATABASE_ENCRYPTION_KEY']
+_key = app.config['SECRET_KEY'][:32]
 
 class Commitment(Document):
     name = EncryptedStringField(key=_key, max_length=100, required=True)
