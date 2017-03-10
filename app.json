@@ -44,6 +44,11 @@
       "description": "What the subscription should be called in GoCardless",
       "value": "Widgets Ltd Tea Club"
     },
+    "GOCARDLESS_ACCESS_TOKEN": {
+      "description": "Your GoCardless Access Token",
+      "value": "",
+      "required": "false"
+    },
     "SETTINGS": {
       "description": "Which settings to use (you almost certainly don't need to change this)",
       "value": "config.Config"
