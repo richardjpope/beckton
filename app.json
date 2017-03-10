@@ -49,6 +49,10 @@
       "value": "",
       "required": "false"
     },
+    "GOCARDLESS_ENVIRONMENT": {
+       "description": "Either 'sandbox' or 'production'",
+      "value": "sandbox"
+    },
     "SETTINGS": {
       "description": "Which settings to use (you almost certainly don't need to change this)",
       "value": "config.Config"
