@@ -54,13 +54,16 @@
       "value": "sandbox"
     },
     "TWILLIO_SID": {
-        "description": "Twillio SID"
+      "description": "Twillio SID",
+      "required": false
     },
     "TWILLIO_AUTH_TOKEN": {
-        "description": "Twillio AuthToken"
+      "description": "Twillio AuthToken",
+      "required": false
     },
     "TWILLIO_PHONE_NUMBER": {
-        "description": "Twillio Phone Number"
+      "description": "Twillio Phone Number",
+      "required": false
     },    
     "SETTINGS": {
       "description": "Which settings to use (you almost certainly don't need to change this)",
