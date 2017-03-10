@@ -26,7 +26,7 @@
     },
     "BECKTON_RATES_CSV": {
       "description": "What rate options and prices to display",
-      "value": "2,Part-time (&pound;4 a month)|8,Full-time (&pound;4 a month)"
+      "value": "2,Part-time (&pound;2 a month)|4,Full-time (&pound;4 a month)"
     },  
     "BECKTON_POSTCODE_AREAS_CSV": {
       "description": "Limit signups to specific UK postcodes e.g. \"SW9,EC1,BR4\" Set to False to allow any postcode",
