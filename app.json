@@ -26,11 +26,11 @@
     },
     "BECKTON_RATES_CSV": {
       "description": "What rate options and prices to display",
-      "value": "2,Part-time (&pound;4 a month)|8,Full-time (&pound;4 a month)"
+      "value": "2,Part-time (&pound;2 a month)|4,Full-time (&pound;4 a month)"
     },  
     "BECKTON_POSTCODE_AREAS_CSV": {
       "description": "Limit signups to specific UK postcodes e.g. \"SW9,EC1,BR4\" Set to False to allow any postcode",
-      "value": "False"
+      "required": false
     },  
     "BECKTON_SUCCESS": {
       "description": "The message to display on the 1st page when the target has been met e.g. \"The target has been met - someone will be in touch\"",
@@ -69,7 +69,7 @@
       "description": "Which settings to use (you almost certainly don't need to change this)",
       "value": "config.Config"
     },
-    "SECRET_TOKEN": {
+    "SECRET_KEY": {
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
     },
