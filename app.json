@@ -49,6 +49,22 @@
       "value": "",
       "required": "false"
     },
+    "GOCARDLESS_ENVIRONMENT": {
+       "description": "Either 'sandbox' or 'production'",
+      "value": "sandbox"
+    },
+    "TWILLIO_SID": {
+      "description": "Twillio SID (you only need to set this if you want to sent SMS)",
+      "required": false
+    },
+    "TWILLIO_AUTH_TOKEN": {
+      "description": "Twillio AuthToken (you only need to set this if you want to sent SMS)",
+      "required": false
+    },
+    "TWILLIO_PHONE_NUMBER": {
+      "description": "Twillio Phone Number (you only need to set this if you want to sent SMS)",
+      "required": false
+    },    
     "SETTINGS": {
       "description": "Which settings to use (you almost certainly don't need to change this)",
       "value": "config.Config"
