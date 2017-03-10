@@ -46,7 +46,7 @@
     "BECKTON_DIRECT_DEBIT_NAME": {
       "description": "What the subscription should be called in GoCardless",
       "value": "Widgets Ltd Tea Club"
-    },
+    }
   },
   "image": "heroku/python",
   "addons": [
