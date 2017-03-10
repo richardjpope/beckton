@@ -8,6 +8,11 @@
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
     },
+    "TEST": {
+      "description": "TESTING",
+      "value": "",
+      "required": "false"
+    },
     "BECKTON_TARGET": {
       "description": "The number of people who need to sign up before payments are taken",
       "value": "10",
