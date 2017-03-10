@@ -11,7 +11,11 @@
     "BECKTON_STATEMENT": {
       "description": "The statement that people are agreeing to e.g. I will join a tea club if 10 other people do too",
       "value": "I will a paying member of Tea Club if 10 other people do too"
-    }
+    },
+    "BECKTON_TERMS": {
+      "description": "An additional thing that people confirm e.g. I am a resident of Barking and Dagenham",
+      "value": "I work at Widgets Ltd and like tea"
+    },
   },
   "image": "heroku/python",
   "addons": [
