@@ -28,7 +28,7 @@ Before you start, you will need to:
 
 1. setup an account on GoCardless and get an Access Token
 2. setup and account on Twillio and get an SID, Auth Token and choose a phone number
-3. Have an account on Heroku (with a payment method setup
+3. have an account on Heroku (with a payment method setup)
 
 Then, just click this button:
 
