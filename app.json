@@ -82,10 +82,6 @@
     "SECRET_KEY": {
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
-    },
-    "DATABASE_ENCRYPTION_KEY": {
-      "description": "A secrete key for encrypting database entries",
-      "generator": "secret"
     }
   },
   "image": "heroku/python",
