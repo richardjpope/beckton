@@ -69,7 +69,7 @@
       "description": "Which settings to use (you almost certainly don't need to change this)",
       "value": "config.Config"
     },
-    "SECRET_TOKEN": {
+    "SECRET_KEY": {
       "description": "A secret key for verifying the integrity of signed cookies.",
       "generator": "secret"
     },
