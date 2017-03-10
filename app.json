@@ -53,6 +53,15 @@
        "description": "Either 'sandbox' or 'production'",
       "value": "sandbox"
     },
+    "TWILLIO_SID": {
+        "description": "Twillio SID"
+    },
+    "TWILLIO_AUTH_TOKEN": {
+        "description": "Twillio AuthToken"
+    },
+    "TWILLIO_PHONE_NUMBER": {
+        "description": "Twillio Phone Number"
+    },    
     "SETTINGS": {
       "description": "Which settings to use (you almost certainly don't need to change this)",
       "value": "config.Config"
