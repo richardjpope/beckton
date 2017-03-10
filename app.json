@@ -4,14 +4,49 @@
   "repository": "https://github.com/memespring/beckton",
   "success_url": "/",
   "env": {
-    "SECRET_TOKEN_1": {
+    "SECRET_TOKEN": {
       "description": "A secret key for verifying the integrity of signed cookies.",
-      "value": "testing"
     },
-    "SECRET_TOKEN_2": {
-      "description": "A secret key for verifying the integrity of signed cookies.",
-      "value": "testing"
-    }    
+    "BECKTON_TARGET": {
+      "description": "The number of people who need to sign up before payments are taken",
+      "value": "10",
+    },
+    "BECKTON_STATEMENT": {
+      "description": "The statement that people are agreeing to e.g. I will join a tea club if 10 other people do too",
+      "value": "I will a paying member of Tea Club if 10 other people do too"
+    },
+    "BECKTON_TERMS": {
+      "description": "An additional thing that people confirm e.g. I am a resident of Barking and Dagenham",
+      "value": "I work at Widgets Ltd and like tea",
+    },
+    "BECKTON_EXPLANATION": {
+      "description": "Some words explaining the context of this campaign. this is displaid on the 1st page. Markdown is OK.",
+      "value": "Tea is good. We should drink more tea.",
+    },
+    "BECKTON_RATES_LABEL": {
+      "description": "The label for the radio buttons for choosing which rate to pay e.g. what hours do you work?",
+      "value": "Membership type",
+    },
+    "BECKTON_RATES_CSV": {
+      "description": "What rate options and prices to display",
+      "value": "2,Part-time (&pound;4 a month)|8,Full-time (&pound;4 a month)",
+    },  
+    "BECKTON_POSTCODE_AREAS_CSV": {
+      "description": "Limit signups to specific UK postcodes e.g. \"SW9,EC1,BR4\" Set to False to allow any postcode",
+      "value": "False",
+    },  
+    "BECKTON_SUCCESS": {
+      "description": "The message to display on the 1st page when the target has been met e.g. \"The target has been met - someone will be in touch\"",
+      "value": "The target has been met - someone will be in touch",
+    },  
+    "BECKTON_DIRECT_DEBIT_CURRENCY": {
+      "description": "The currency for direct debits",
+      "value": "GBP",
+    },  
+    "BECKTON_DIRECT_DEBIT_NAME": {
+      "description": "What the subscription should be called in GoCardless",
+      "value": "Widgets Ltd Tea Club",
+    },
   },
   "image": "heroku/python",
   "addons": [
