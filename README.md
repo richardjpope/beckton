@@ -8,9 +8,10 @@ Beckton is a tool for creating a new group of paying members, using the [Conditi
 Beckton could be used for thigns like setting up a new union branch or a new cooperative purchasing group. It uses [GoCardless](https://gocardless.com) to create and manage payments and [Twillio](https://www.twilio.com/) to send updates.
 
 * [Screenshots](#screenshots)
-* [Getting started](#getting-started)
+* [Deploying to Heroku](#deploy-to-heroku)
+* [Local development](#local-development)
 * [Settings](#settings)
-* [Testing](#testing)
+* [Runnig tests](#testing)
 * [Resetting the database](resetting-the-database)
 
 
@@ -21,7 +22,19 @@ Beckton could be used for thigns like setting up a new union branch or a new coo
 <img src="https://github.com/memespring/beckton/raw/master/docs/step4.png" width="250"/>
 <img src="https://github.com/memespring/beckton/raw/master/docs/step5.png" width="250"/>
 
-##Getting started
+##Deploy to Heroku
+
+Before you start, you will need to:
+
+1. setup an account on GoCardless and get an Access Token
+2. setup and account on Twillio and get an SID, Auth Token and choose a phone number
+3. Have an account on Heroku (with a payment method setup
+
+Then, just click this button:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+##Local development
 
 This section describes how to get a development copy of Beckton working.
 
