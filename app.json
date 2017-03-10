@@ -18,7 +18,7 @@
     },
     "BECKTON_EXPLANATION": {
       "description": "Some words explaining the context of this campaign. this is displaid on the 1st page. Markdown is OK.",
-      "value": "Tea is good. We should drink more tea.",
+      "value": "Tea is good. We should drink more tea."
     }
   },
   "image": "heroku/python",
