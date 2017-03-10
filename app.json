@@ -13,6 +13,9 @@
   "addons": [
     {
       "plan": "heroku-redis"
-    }
+    },
+    {
+      "plan": "mongolab"
+    }    
    ]
 }
