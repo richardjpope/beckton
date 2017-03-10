@@ -11,7 +11,7 @@ Beckton could be used for thigns like setting up a new union branch or a new coo
 * [Deploying to Heroku](#deploy-to-heroku)
 * [Local development](#local-development)
 * [Settings](#settings)
-* [Runnig tests](#testing)
+* [Running tests](#testing)
 * [Resetting the database](resetting-the-database)
 
 
@@ -32,7 +32,8 @@ Before you start, you will need to:
 
 Then, just click this button:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fmemespring%2Fbeckton%2Ftree%2Fmaster)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 
 ##Local development
 
