@@ -7,9 +7,7 @@ class Config(object):
 
     PREFERRED_URL_SCHEME = os.environ.get('PREFERRED_URL_SCHEME', 'https')
 
-    MONGODB_DB = os.environ.get('MONGODB_DB', None)
-    MONGODB_HOST = os.environ.get('MONGODB_HOST', None)
-    MONGODB_PORT = int(os.environ.get('MONGODB_PORT', 0))
+    MONGODB_HOST = os.environ.get('MONGO_URI', None)
     SECRET_KEY = os.environ.get('SECRET_KEY', None)
     DATABASE_ENCRYPTION_KEY = os.environ.get('DATABASE_ENCRYPTION_KEY', None) # must be 16, 24 or 32 bytes long
     
