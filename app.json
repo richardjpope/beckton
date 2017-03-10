@@ -9,5 +9,11 @@
       "generator": "secret"
     }
   },
-  "image": "heroku/python"
+  "image": "heroku/python",
+  "addons": [
+    "heroku-redis",
+    {
+      "plan": "hobby-dev"  
+    }
+   ]
 }
