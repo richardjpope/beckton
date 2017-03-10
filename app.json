@@ -15,7 +15,7 @@
     "BECKTON_TERMS": {
       "description": "An additional thing that people confirm e.g. I am a resident of Barking and Dagenham",
       "value": "I work at Widgets Ltd and like tea"
-    },
+    }
   },
   "image": "heroku/python",
   "addons": [
