@@ -36,9 +36,9 @@ class Config(object):
     CELERY_TASK_SERIALIZER = 'json'
     CELERY_RESULT_SERIALIZER = 'json'
     CELERY_REDIS_MAX_CONNECTIONS = 20
-    CELERY_BROKER_URL = os.environ.get('CELERY_BROKER_URL', None)
-    CELERY_RESULT_BACKEND = os.environ.get('CELERY_RESULT_BACKEND', None)
-    CELERY_TIMEZONE = os.environ.get('CELERY_TIMEZONE', None)
+    CELERY_BROKER_URL = os.environ.get('REDIS_URL', None)
+    CELERY_RESULT_BACKEND = os.environ.get('REDIS_URL', None)
+    # CELERY_TIMEZONE = os.environ.get('CELERY_TIMEZONE', None)
     CELERYBEAT_SCHEDULE = {
     'send_halfway_message': {
         'task': 'beckton.tasks.send_halfway_message',
