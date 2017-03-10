@@ -8,6 +8,20 @@
       "description": "The number of people who need to sign up before payments are taken",
       "value": "10"
     },
+    "formation": {
+      "web": {
+        "quantity": 1,
+        "size": "hobby"
+      },
+      "worker": {
+        "quantity": 1,
+        "size": "hobby"
+      },
+      "beat": {
+        "quantity": 1,
+        "size": "hobby"
+      }
+    },
     "BECKTON_STATEMENT": {
       "description": "The statement that people are agreeing to e.g. I will join a tea club if 10 other people do too",
       "value": "I will a paying member of Tea Club if 10 other people do too"
