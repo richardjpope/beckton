@@ -3,6 +3,16 @@
   "description": "Beckton is a tool for creating a new group of paying members",
   "repository": "https://github.com/memespring/beckton",
   "success_url": "/",
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    },
+    "worker": {
+      "quantity": 2,
+      "size": "free"
+    }
+  },
   "env": {
     "BECKTON_TARGET": {
       "description": "The number of people who need to sign up before payments are taken",
