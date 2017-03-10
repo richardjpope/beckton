@@ -68,7 +68,8 @@
       "plan": "heroku-redis"
     },
     {
-      "plan": "mongolab"
+      "plan": "mongolab",
+      "as": "MONGO"
     }    
    ]
 }
