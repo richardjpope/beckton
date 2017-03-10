@@ -43,6 +43,18 @@
     "BECKTON_DIRECT_DEBIT_NAME": {
       "description": "What the subscription should be called in GoCardless",
       "value": "Widgets Ltd Tea Club"
+    },
+    "SETTINGS": {
+      "description": "Which settings to use (you almost certainly don't need to change this)",
+      "value": "config.Config"
+    },
+    "SECRET_TOKEN": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "DATABASE_ENCRYPTION_KEY": {
+      "description": "A secrete key for encrypting database entries",
+      "generator": "secret"
     }
   },
   "image": "heroku/python",
