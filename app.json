@@ -5,7 +5,8 @@
   "success_url": "/",
   "env": {
     "SECRET_TOKEN_1": {
-      "description": "A secret key for verifying the integrity of signed cookies."
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "value": "testing"
     }
   },
   "image": "heroku/python",
