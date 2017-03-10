@@ -47,7 +47,7 @@
     "BECKTON_DIRECT_DEBIT_NAME": {
       "description": "What the subscription should be called in GoCardless",
       "value": "",
-    },      
+    }
   },
   "image": "heroku/python",
   "addons": [
